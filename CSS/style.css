@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    background: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.icon {
+    padding: 0.3125rem 0 0 5rem;
+    width: 11.25rem;
+    height: 7.5rem;
+    padding-left: 0rem;
+    /* border-radius: 230px; */
+}
+
+.logo {
+    padding: 0.3125rem 0 0 5rem;
+    width: 10.625rem;
+    height: 6.25rem;
+    padding-left: 0rem;
+    /* border-style: solid; */
+}
+
+.menu_btn {
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    /* overflow: hidden; */
+    background-color: rgb(199, 197, 197);
+    box-shadow: 0 0.9375rem 0.9375rem rgb(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* home and contact button */
+.navbar a {
+    float: left;
+    font-size: 0.9375rem;
+    color: black;
+    text-align: center;
+    padding: 3.25rem 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+/* other navigations */
+.subnav .subnavbtn {
+    font-size: 0.9375rem;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 3.25rem 1.25rem;
+    background-color: inherit;
+    font-family: inherit;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: rgb(74, 72, 72, 0.9);
+    color: gold;
+    display: block;
+    transition: width 3s;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(74, 72, 72, 0.9);
+    width: 100%;
+}
+
+.subnav-content a {
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: rgb(74, 72, 72, 0.4);
+    color: gold;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.scrollBar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 8.5625rem;
+    display: block;
+    font-size: 1.1875rem;
+    background: none;
+    z-index: -1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* border-style: solid; */
+}
+
+.main_container {
+    display: flex;
+    gap: .5rem;
+    margin-left: 3.5rem;
+    /* border: solid; */
+    /* border: 10px solid firebrick; */
+}
+
+/* .main_container>* {
+    flex-basis: 100%;
+} */
+
+.page_container {
+    width: 900px;
+    height: auto;
+    /* border: solid; */
+    flex-shrink: 1;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    /* border: solid; */
+    margin-left: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+.form {
+    width: 18.75rem;
+    height: 18.75rem;
+    /* border-style: solid; */
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+#enquiry {
+    width: 23rem;
+    height: auto;
+    background: rgba(48, 52, 52, 0.2);
+    color: black;
+    display: block;
+    border-radius: 1.25rem;
+    border-style: dotted;
+    transition: background-color 1s;
+    /* position: fixed; */
+}
+
+#enquiry:hover {
+    background-color: rgba(23, 158, 156, 0.2);
+}
+
+#enquiry_text {
+    width: 12.5rem;
+    height: 1.875rem;
+    text-align: center;
+    border-style: solid;
+    margin-top: 0rem;
+    margin-left: 5rem;
+    color: white;
+    background: black;
+    border-radius: 0.9375rem;
+    z-index: -1;
+    /* position: fixed; */
+}
+
+.enquiry_form_field {
+    width: 80%;
+    height: 2.1875rem;
+    margin-left: 2.375rem;
+    margin-top: 1.25rem;
+    border-radius: 1.25rem;
+    z-index: -5;
+}
+
+.enquiry_form_textarea {
+    float: left;
+    width: 79%;
+    min-height: 75px;
+    outline: none;
+    margin-left: 40px;
+    margin-top: 25px;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(30, 26, 26);
+    width: 100%;
+    height: 1.875rem;
+    padding: 0.625rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 0.3125rem;
+}
+
+#about_us {
+    background-color: rgb(134, 185, 210, 0.7);
+    width: 100%;
+    height: 10rem;
+    padding: 0.625rem;
+    position: static;
+    bottom: 3.75rem;
+    left: 0;
+}
+
+@media (max-width: 1152px) {
+    html {
+        font-size: .8rem;
+        width: 80hw;
+    }
+
+    .logo {
+        padding: 0.3125rem 0 0 5rem;
+        width: 6.8rem;
+        height: 3.5rem;
+        padding-left: 0rem;
+        /* border-style: solid; */
+    }
+
+    .icon {
+        width: 4rem;
+        height: 2rem;
+    }
+
+    .menu_btn {
+        display: block;
+        /* float: right; */
+        /* margin-right: .5rem; */
+        margin-top: .7rem;
+        margin-left: 26rem;
+        position: fixed;
+    }
+
+    #click {
+        display: none;
+    }
+
+    #click:checked~.navbar {
+        left: 0%;
+    }
+
+    #click:checked~.menu_btn i:before {
+        content: "\f00d";
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 9rem;
+        z-index: 1;
+        left: -100%;
+        /* display: none; */
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar a {
+        font-size: 0.8125rem;
+        padding: 1.3rem 1.5rem;
+        /* border-style: solid; */
+        float: right;
+    }
+
+    .subnav {
+        float: right;
+    }
+
+    .subnav .subnavbtn {
+        font-size: 0.8125rem;
+        /* border-style: solid; */
+        padding: 1.5rem 1.5rem;
+        background-color: inherit;
+
+    }
+
+    .subnav-content {
+        display: none;
+        left: 9rem;
+        width: 40vw;
+        height: auto;
+    }
+
+    .subnav-content a {
+        float: none;
+        color: black;
+        text-decoration: none;
+        /* border-style: solid; */
+    }
+
+    .subnav:hover .subnav-content {
+        display: block;
+    }
+
+    .scrollBar {
+        margin-top: 1rem;
+        font-size: .8rem;
+    }
+
+    .main_container {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        width: 26.5rem;
+        margin-left: 1.125rem;
+    }
+
+    .form_container {
+        margin-left: 1rem;
+        /* flex-wrap: wrap; */
+    }
+
+    .page_container {
+        width: auto;
+        height: auto;
+        /* border-style: solid; */
+        flex-shrink: 1;
+    }
+
+    .enquiry_form_textarea {
+        margin-left: 2.4rem;
+    }
+
+    footer {
+        position: relative;
+        
+    }
+
+    #about_us {
+        width: 100%;
+        height: auto;
+        padding: 0.625rem;
+        position: relative;
+        bottom: 0rem;
+    }
+}
+
+/* media query ends here */

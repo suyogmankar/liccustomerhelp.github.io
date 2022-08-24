@@ -1,10 +1,3 @@
-const nav = document.querySelector(".navigationBar");
-fetch("../HTML/common.html")
-  .then((res) => res.text())
-  .then((data) => {
-    nav.innerHTML = data;
-  });
-
 function loadHtml(id, filename){
   console.log(`div id : ${id}, filename : ${filename}`);
 
@@ -25,7 +18,7 @@ function loadHtml(id, filename){
         }
      }
 
-     xhttp.open("GET", `../HTML/${file}`, true);
+     xhttp.open("GET", `HTML/${file}`, true);
      xhttp.send();
      return;
   }

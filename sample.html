@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .main_container {
+        display: flex;
+        gap: 1.5rem;
+        border: solid;
+        /* border: 10px solid firebrick; */
+      }
+
+      /* .main_container > * {
+        flex-basis: 100%;
+      } */
+
+      .page_container {
+        width: 900px;
+        height: auto;
+        border: solid;
+        flex-shrink: 1;
+      }
+
+      .form_container {
+        display: flex;
+        flex-direction: column;
+        /* border-style: solid; */
+        /* flex-wrap: wrap; */
+      }
+
+      .inner3 {
+        border-style: solid;
+      }
+
+      .form {
+        width: 18.75rem;
+        height: 18.75rem;
+        border-style: solid;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      #enquiry {
+        width: 23rem;
+        height: auto;
+        background: rgba(48, 52, 52, 0.2);
+        color: black;
+        display: block;
+        border-radius: 1.25rem;
+        border-style: dotted;
+        transition: background-color 1s;
+      }
+
+      #enquiry:hover {
+        background-color: rgba(23, 158, 156, 0.2);
+      }
+
+      #enquiry_text {
+        width: 12.5rem;
+        height: 1.875rem;
+        text-align: center;
+        border-style: solid;
+        margin-top: 0rem;
+        margin-left: 6.125rem;
+        color: white;
+        background: black;
+        border-radius: 0.9375rem;
+        z-index: -1;
+      }
+
+      .enquiry_form_field {
+        width: 80%;
+        height: 2.1875rem;
+        margin-left: 2.375rem;
+        margin-top: 1.25rem;
+        border-radius: 1.25rem;
+        z-index: -5;
+      }
+
+      @media (max-width: 900px) {
+        .main_container {
+          flex-direction: column;
+          /* flex-wrap: wrap; */
+          width: 24.0625rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="page_container">
+        <img
+          src="Images/lic-jeevan-labh-baner.jpg"
+          id="image"
+          width="840px"
+          height="530px"
+        />
+        <p style="color: rgb(31, 121, 165)">
+          <b>
+            We offer a wide range of LIC of India insurance products including,
+            but not limited to, Term insurance, Whole life insurance, Pension
+            Plans, Child Plans, Health Insurance. We assist in the entire city
+            of Pune. We have a fully licensed team of professionals who strive
+            to fulfill our customer’s expectations. We will provide you with
+            excellent doorstep service and customer support. With our
+            outstanding service, you can always reach a professional who can
+            answer your LIC insurance related questions.
+          </b>
+        </p>
+        <br /><br />
+        <h3>Building relationships is our business</h3>
+        <br />
+        <p style="font-size: 0.875rem">
+          As your Insurance advisior, We think there is more to insurance than
+          the policy itself. It’s about offering dependable safety and service.
+          That’s why gaining your trust is our policy.
+        </p>
+        <br /><br />
+        <p style="font-size: 17px">Protect your family’s lifestyle</p>
+        <br />
+        <p style="font-size: 0.875rem">
+          Our mission is to help people manage the risks of everyday life,
+          recover from the unexpected and realize their dreams. We can assist
+          you to know about types of insurance plans available in LIC, where to
+          go for help, buyer’s guides and a lot more. Since customer service is
+          our number ONE priority to our insured’s, you can rest assured that we
+          will be there when you need the most. Let us serve your Life insurance
+          needs! Contact us now to determine your insurance needs and to let you
+          know the premium for your coverage’s.
+        </p>
+      </div>
+      <div class="form_container">
+        <div id="enquiry_text">
+          <b>Enquiry</b>
+        </div>
+        <div id="enquiry">
+          <form
+            id="enquiry_form"
+            method="post"
+            autocomplete="off"
+            name="google-sheet"
+          >
+            <input
+              type="text"
+              class="enquiry_form_field"
+              name="fname"
+              id="fname"
+              required="true"
+              placeholder="Firstname *"
+              spellcheck="true"
+            /><br />
+            <input
+              type="text"
+              class="enquiry_form_field"
+              name="lname"
+              id="lname"
+              required="true"
+              placeholder="Lastname *"
+              spellcheck="true"
+            /><br />
+            <input
+              type="email"
+              class="enquiry_form_field"
+              name="email"
+              id="email"
+              required="true"
+              placeholder="Email *"
+            /><br />
+            <input
+              type="number"
+              class="enquiry_form_field"
+              name="phone"
+              id="phone"
+              required="true"
+              placeholder="Phone *"
+            /><br />
+            <textarea
+              class="enquiry_form_textarea"
+              name="message"
+              id="message"
+              rows="6"
+              cols="48"
+              required="true"
+              placeholder="Your Message *"
+              style="margin-left: 38px; margin-top: 30px; border-radius: 20px"
+            ></textarea>
+            <input
+              type="submit"
+              name="submit"
+              value="Submit"
+              class="enquiry_form_field"
+              style="color: white; background: black; margin-bottom: 30px"
+            />
+          </form>
+        </div>
+      </div>
+      <!-- <div class="inner3">
+        <h3>Box 3</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis iure
+          ducimus repellendus architecto asperiores accusamus repudiandae, rerum
+          minus enim voluptate vero! Eos, eius! Officia libero magnam commodi
+          tenetur culpa deserunt eligendi voluptatum aperiam blanditiis sit
+          molestias dolor nobis beatae illo ad, sapiente omnis, rem doloribus in
+          dolorum. Iusto, sint consectetur?
+        </p>
+      </div> -->
+    </div>
+  </body>
+</html>

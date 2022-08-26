@@ -8,7 +8,7 @@
 }
 
 html {
-    background: white;
+    background: rgb(248, 246, 246);
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -112,7 +112,7 @@ html {
     position: relative;
     margin-top: 8.5625rem;
     display: block;
-    font-size: 1.1875rem;
+    font-size: 1.3rem;
     background: none;
     z-index: -1;
     overflow-x: hidden;
@@ -135,15 +135,17 @@ html {
 .page_container {
     width: 900px;
     height: auto;
+    background: white;
     /* border: solid; */
     flex-shrink: 1;
+    box-shadow: 0.9375rem 0.9375rem 0.9375rem rgb(0, 0, 0, 0.1);
 }
 
 .form_container {
     display: flex;
     flex-direction: column;
     /* border: solid; */
-    margin-left: 1rem;
+    margin-left: 4rem;
     /* flex-wrap: wrap; */
 }
 
@@ -155,6 +157,7 @@ html {
 
 img {
     max-width: 100%;
+    width: 900rem;
 }
 
 iframe {
@@ -241,10 +244,23 @@ footer {
     left: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     html {
         font-size: .8rem;
         width: 80hw;
+    }
+
+    img {
+        height: 19rem;
+    }
+
+    iframe {
+        height: 17rem;
+    }
+
+    .pdf_image{
+        height: 6rem;
+        width: 4rem;
     }
 
     .logo {
@@ -331,7 +347,7 @@ footer {
 
     .scrollBar {
         margin-top: 1rem;
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .main_container {
@@ -351,6 +367,7 @@ footer {
         height: auto;
         /* border-style: solid; */
         flex-shrink: 1;
+        box-shadow: 1rem 1rem 1rem rgb(0, 0, 0, 0.1);
     }
 
     .enquiry_form_textarea {
@@ -359,7 +376,7 @@ footer {
 
     footer {
         position: relative;
-        
+
     }
 
     #about_us {

@@ -244,7 +244,7 @@ footer {
     left: 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 851px) {
     html {
         font-size: .8rem;
         width: 80hw;
@@ -363,7 +363,7 @@ footer {
     }
 
     .page_container {
-        width: auto;
+        width: 27.3rem;;
         height: auto;
         /* border-style: solid; */
         flex-shrink: 1;

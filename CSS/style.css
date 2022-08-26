@@ -29,6 +29,11 @@ html {
     /* border-style: solid; */
 }
 
+.pdf_image{
+    height: 6rem;
+    width: 4rem;
+}
+
 .menu_btn {
     color: black;
     font-size: 2rem;
@@ -363,7 +368,7 @@ footer {
     }
 
     .page_container {
-        width: auto;
+        width: 27.3rem;
         height: auto;
         /* border-style: solid; */
         flex-shrink: 1;
